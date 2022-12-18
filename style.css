@@ -9,7 +9,7 @@ header {
     padding: 20px 0;
 }
 
-header .caixa {
+.caixa {
     position: relative;
     width: 940px;
     margin: 0 auto;
@@ -70,7 +70,7 @@ nav a:hover {
     font-style: italic;
 }
 
-.principal .utensilios {
+.utensilios {
     width: 120px;
     float: left; /* descola o elemento da lateral e deixa os outros elementos ao redor */
     margin: 0 20px 20px 0;
@@ -86,7 +86,7 @@ nav a:hover {
     text-align: center;
 }
 
-.mapa .mapa-conteudo {
+.mapa-conteudo {
     width: 940px;
     margin: 0 auto;
 }
@@ -96,37 +96,37 @@ nav a:hover {
     background: #888888;
 }
 
-.beneficios .conteudo-beneficios {
+.conteudo-beneficios {
     width: 640px;
     margin: 0 auto;
 }
 
-.beneficios .lista-beneficios {
+.lista-beneficios {
     width: 40%;
     display: inline-block;
     vertical-align: top;
 }
 
-.beneficios .itens {
+.itens {
     line-height: 1.5; /* espaçamento entre linhas */
 }
 
-.beneficios .itens:first-child { /* pega o primeiro elemento com classe */
+.itens:first-child { /* pega o primeiro elemento com classe */
     font-weight: bold;
 }
 
-.beneficios .itens::before { /* acrescenta css antes do conteúdo */
+.itens::before { /* acrescenta css antes do conteúdo */
     content: '★';
 }
 
-.beneficios .imagem-beneficios {
+.imagem-beneficios {
     width: 60%;
     opacity: 1; /* vai de 0 a 1 */
     transition: .4s;
     box-shadow: 10px 10px 10px #000; /* x y blur expansão # */
 }
 
-.beneficios .imagem-beneficios:hover {
+.imagem-beneficios:hover {
     opacity: .3;
 }
 
@@ -253,12 +253,8 @@ footer {
 
 /* @media 'tipo de tela' and (max-width: ) */
 @media screen and (max-width: 480px) {
-    .caixa,
-    .principal,
-    .conteudo-beneficios,
-    .mapa-conteudo,
-    .video {
-        width: auto;
+    header {
+        display: flex;
     }
 
     h1 {
@@ -267,11 +263,47 @@ footer {
 
     nav {
         position: static;
+        text-align: center;
+    }
+
+    .titulo-principal {
+        margin-top: 1.5em;
+        font-size: 1.5em;
+    }
+    
+    .caixa,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-conteudo,
+    .video,
+    .produtos {
+        width: auto;
+    }
+
+    .principal,
+    .mapa-conteudo {
+        padding: 0 1em;
+    }
+
+    .lista-beneficios {
+        padding: 0 0 1em 1em;
     }
 
     .lista-beneficios,
     .imagem-beneficios {
         width: 100%;
+    }
+
+    .mapa {
+        padding: 1em 0;
+    }
+
+    .beneficios {
+        padding: .5em 0;
+    }
+
+    .video {
+        padding: 0 1em;
     }
 
     .produtos li {

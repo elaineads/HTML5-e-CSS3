@@ -185,6 +185,7 @@ nav a:hover {
 /* Página contato */
 form {
     margin: 40px 0;
+    padding: 0 1em;
 }
 
 form label, 
@@ -285,8 +286,8 @@ footer {
         padding: 0 1em;
     }
 
-    .lista-beneficios {
-        padding: 0 0 1em 1em;
+    .conteudo-beneficios {
+        margin: 0 0 1em 1em;
     }
 
     .lista-beneficios,
@@ -295,6 +296,8 @@ footer {
     }
 
     .imagem-beneficios {
+        margin: 1em 0 0 -1em;
+        width: calc(100% + 1em);
         box-shadow: none;
     }
 
@@ -312,5 +315,26 @@ footer {
 
     .produtos li {
         display: block;
+        width: 80%;
+        margin: 0 auto 1em auto;
+    }
+
+    .input-padrao {
+        width: 80%;
+    }
+
+    .select-horario {
+        margin-top: 1em;
+    }
+
+    .enviar {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        padding: -1em;
+    }
+
+    table {
+        margin: 40px auto;
     }
 }

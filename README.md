@@ -1,6 +1,7 @@
 # :computer: Projeto: Barbearia Alura
 ### :page_with_curl: Proposta
-Desenvolver uma página web com o tema 'Barbearia Alura' com versão mobile utilizando HTML5 e CSS3. A aplicação deveria conter três páginas: home, produtos e contato.
+Desenvolver uma página web com o tema 'Barbearia Alura' com versão mobile utilizando HTML5 e CSS3. A aplicação deveria conter cabeçalho, rodapé e três páginas: home (com mapa e vídeo incorporados), produtos (com cards dos serviços) e contato (com formulário e tabela).
+
 > :pushpin: Projeto desenvolvido no decorrer dos cursos da Alura:
 > * HTML5 e CSS3 parte 1: Crie uma página web;
 > * HTML5 e CSS3 parte 2: Posicionamento, listas e navegação;
@@ -21,4 +22,7 @@ Desenvolver uma página web com o tema 'Barbearia Alura' com versão mobile util
 <div>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
- </div>
+</div>
+
+ ### :link: Site no Ar
+ https://elaineads-barbearia-alura.vercel.app/
